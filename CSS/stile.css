@@ -1,0 +1,162 @@
+h1 {
+    color: #3F3E6F ;
+    text-align: center;
+    font-size: 50px;
+    font-family: inter;
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: inter;
+    font-weight: normal;
+}
+h3 {
+    text-align: start;
+} 
+h4 {
+    font-family: inter;
+    font-size: 24px;
+    color: #3F3E6F;
+    font-weight: bold;
+}
+h5 {
+    font-family: inter;
+    font-size: 24px;
+    color: #3F3E6F;
+    font-weight: bold;
+    margin: 60px;
+    margin-left: 240px;
+}
+h6 {
+    font-family: inter;
+    font-size: 24px;
+    color: #3F3E6F;
+    font-weight: bold;
+}
+header p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin:0;
+    padding: 20px;
+}
+header a:hover {
+    color: rgb(0, 191, 255);
+    text-decoration: underline;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+p a {
+    font-family: inter;
+    font-size: 20px;
+    color: #3F3E6F;
+    font-weight: bold;
+}
+p {
+    font-family: inter;
+    font-size: 20px;
+    color: #3F3E6F;
+    font-weight: normal;
+}
+header nav ul {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    gap: 20px;
+    font-weight: bold;
+}
+li {
+    float: right;
+}
+li a {
+    display: block;
+    padding: 8px;
+    font-size: 20px;
+    font-family: inter;
+    color: #3F3E6F;
+    margin-right: 10px;
+}
+main {
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+main div.card {
+    background: #fff;
+    border-radius: 10px;
+}
+
+main div.card img {
+    border-radius: 0 0 0 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+main div img {
+    object-fit: cover;
+    border-radius: 0;
+    height: 375px;
+    width: 100%;
+}
+
+main div.card h2 {
+    margin: 0;
+    padding: 20px 20px 4px 20px;
+    font-size: 18px;
+}
+
+main div.card p {
+    margin: 0;
+    padding: 0 20px 20px 20px;
+    font-size: 16px;
+    line-height: 1.0;
+}
+
+main div.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+}
+
+footer {
+    text-align: center;
+    padding: 0;
+}
+
+footer p {
+    border-top:1px solid rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 40px 0;
+    font-size: 24px;
+    color: #3F3E6F;
+    font-weight: normal;
+}
+
+@media (max-width: 800px) { 
+    body { 
+        background:#3F3E6F;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background: chartreuse;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main div.card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap:20px;
+    }
